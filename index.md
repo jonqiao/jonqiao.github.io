@@ -1,16 +1,22 @@
-# **Start from Now!!**
+# **Start from Now!!!**
 
-### **k8s&OPC**
+### **Catalog - k8s&OCP**
 #### Basic
 1. kubectl --help
 2. kubect create  # 创建一个资源从一个文件或标准输入
-	- kubectl create deployment nginx --image=nginx:1.14 
-	- kubectl create -f my-nginx.yaml
+	 ```
+    kubectl create deployment nginx --image=nginx:1.14 
+	  kubectl create -f my-nginx.yaml
+   ```
 3. kubectl run  # 在集群中运行一个指定的镜像
-	- kubectl run nginx -it --rm=true --image=nginx --command bash
-	- kubectl run busybox -it --rm=true --image=busybox --restart=Never
+   ```
+    kubectl run nginx -it --rm=true --image=nginx --command bash
+    kubectl run busybox -it --rm=true --image=busybox --restart=Never
+   ```
 4. kubectl expose # 创建Service对象以将应用程序"暴露"于网络中
-	- kubectl expose deployment/nginx  --type="NodePort" --port=80 --name=nginx
+   ```
+   kubectl expose deployment/nginx  --type="NodePort" --port=80 --name=nginx
+   ```
 5. kubectl get  # 显示一个或更多resources资源
 	- kubectl get cs  # 查看集群状态
 	- kubectl get nodes  # 查看集群节点信息
