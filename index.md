@@ -1,23 +1,22 @@
 # **Start from Now!!!**
 
 ### **Catalog - k8s & OCP**
-#### Chapter1: kubectl Commands
-1. kubectl --help
-2. kubect create  # 创建一个资源从一个文件或标准输入
+#### Chapter1: k8s cli - kubectl
+1. kubect create  # 创建一个资源从一个文件或标准输入
 	 ```
    kubectl create deployment nginx --image=nginx:1.14 
    kubectl create -f my-nginx.yaml
    ```
-3. kubectl run  # 在集群中运行一个指定的镜像
+2. kubectl run  # 在集群中运行一个指定的镜像
    ```
    kubectl run nginx -it --rm=true --image=nginx --command bash
    kubectl run busybox -it --rm=true --image=busybox --restart=Never
    ```
-4. kubectl expose # 创建Service对象以将应用程序"暴露"于网络中
+3. kubectl expose # 创建Service对象以将应用程序"暴露"于网络中
    ```
    kubectl expose deployment/nginx  --type="NodePort" --port=80 --name=nginx
    ```
-5. kubectl get  # 显示一个或更多resources资源
+4. kubectl get  # 显示一个或更多resources资源
    ```
    kubectl get cs  # 查看集群状态
    kubectl get nodes  # 查看集群节点信息
@@ -30,22 +29,22 @@
    kubectl get pod,svc,ep --show-labels  # 查看pod,svc,ep能及标签信息
    kubectl get all --all-namespaces      # 查看所有命名空间下的所有资源
    ```
-6. kubectl cluster-info   # 显示集群信息
+5. kubectl cluster-info   # 显示集群信息
 	 ```
    kubectl cluster-info  # 查看集群状态信息
    ```
-7. kubectl describe 描述资源对象
+6. kubectl describe 描述资源对象
 	 ```
    kubectl describe nodes <node-name>  # 显示Node的详细信息
    kubectl describe pods/<pod-name>    # 显示Pod的详细信息
    ```
-8. kubectl scale pod扩容与缩容
+7. kubectl scale pod扩容与缩容
 	 ```
    kubectl scale deployment nginx --replicas 5  # 扩容
    kubectl scale deployment nginx --replicas 3  # 缩容
    ```
-9. kubectl api-resources # 查看服务器上支持的API资源
-10. generate yaml of resource
+8. kubectl api-resources # 查看服务器上支持的API资源
+9. generate yaml of resource
 	 ```
    kubectl scale deployment nginx --replicas 5  # 扩容
    kubectl scale deployment nginx --replicas 3  # 缩容
