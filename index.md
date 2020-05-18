@@ -46,6 +46,10 @@
    ```
 9. kubectl api-resources # 查看服务器上支持的API资源
 10. generate yaml of resource
+	 ```
+   kubectl scale deployment nginx --replicas 5  # 扩容
+   kubectl scale deployment nginx --replicas 3  # 缩容
+   ```
    ```
    kubectl create deploy nginx-dp --image=nginx -o yaml --dry-run > deploy.yaml  # dry-run生成yaml文件
    kubectl get deploy nginx-dp -o yaml --export > deploy.yaml                    # get命令导出yaml文件
