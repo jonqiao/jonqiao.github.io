@@ -21,7 +21,7 @@
    ```
    kubectl get cs  # 查看集群状态
    kubectl get nodes  # 查看集群节点信息
-	 kubectl get ns     # 查看集群命名空间
+   kubectl get ns     # 查看集群命名空间
    kubectl get svc -n kube-system  # 查看指定命名空间的服务
    kubectl get pod <pod-name> -o wide  # 查看Pod详细信息
    kubectl get pod <pod-name> -o yaml  # 以yaml格式查看Pod详细信息
@@ -47,9 +47,9 @@
 9. kubectl api-resources # 查看服务器上支持的API资源
 10. generate yaml of resource
 	 ```
-   kubectl create deployment nginx --image=nginx -o yaml --dry-run > deploy.yaml  # 用run命令生成yaml文件
-   kubectl get deploy nginx-deployment -o yaml --export > deploy.yaml             # 用get命令导出yaml文件
-   kubectl explain pods.spec.containers                                           # 用explain命令导出yaml文件
+   kubectl create deployment nginx-dp --image=nginx -o yaml --dry-run > deploy.yaml  # 用run命令生成yaml文件
+   kubectl get deploy nginx-dp -o yaml --export > deploy.yaml                        # 用get命令导出yaml文件
+   kubectl explain pods.spec.containers                                              # 用explain命令导出yaml文件
    ```
 
 
