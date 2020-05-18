@@ -22,13 +22,13 @@
    kubectl get cs  # 查看集群状态
    kubectl get nodes  # 查看集群节点信息
 	 kubectl get ns     # 查看集群命名空间
-	 kubectl get svc -n kube-system  # 查看指定命名空间的服务
-	 kubectl get pod <pod-name> -o wide  # 查看Pod详细信息
-	 kubectl get pod <pod-name> -o yaml  # 以yaml格式查看Pod详细信息
-	 kubectl get pods  # 查看资源对象，查看所有Pod列表
-	 kubectl get rc,service  # 查看资源对象，查看rc和service列表
-	 kubectl get pod,svc,ep --show-labels  # 查看pod,svc,ep能及标签信息
-	 kubectl get all --all-namespaces      # 查看所有命名空间下的所有资源
+   kubectl get svc -n kube-system  # 查看指定命名空间的服务
+   kubectl get pod <pod-name> -o wide  # 查看Pod详细信息
+   kubectl get pod <pod-name> -o yaml  # 以yaml格式查看Pod详细信息
+   kubectl get pods  # 查看资源对象，查看所有Pod列表
+   kubectl get rc,service  # 查看资源对象，查看rc和service列表
+   kubectl get pod,svc,ep --show-labels  # 查看pod,svc,ep能及标签信息
+   kubectl get all --all-namespaces      # 查看所有命名空间下的所有资源
    ```
 6. kubectl cluster-info   # 显示集群信息
 	 ```
@@ -37,19 +37,19 @@
 7. kubectl describe 描述资源对象
 	 ```
    kubectl describe nodes <node-name>  # 显示Node的详细信息
-	 kubectl describe pods/<pod-name>    # 显示Pod的详细信息
+   kubectl describe pods/<pod-name>    # 显示Pod的详细信息
    ```
 8. kubectl scale pod扩容与缩容
 	 ```
    kubectl scale deployment nginx --replicas 5  # 扩容
-	 kubectl scale deployment nginx --replicas 3  # 缩容
+   kubectl scale deployment nginx --replicas 3  # 缩容
    ```
 9. kubectl api-resources # 查看服务器上支持的API资源
 10. generate yaml of resource
 	 ```
    kubectl create deployment nginx --image=nginx:1.14 -o yaml --dry-run > my.deploy.yaml   # 用run命令生成yaml文件
-	 kubectl get deploy nginx-deployment -o yaml --export > my.deploy.yaml                   # 用get命令导出yaml文件
-	 kubectl explain pods.spec.containers                                                    # 用explain命令导出yaml文件
+   kubectl get deploy nginx-deployment -o yaml --export > my.deploy.yaml                   # 用get命令导出yaml文件
+   kubectl explain pods.spec.containers                                                    # 用explain命令导出yaml文件
    ```
 
 
