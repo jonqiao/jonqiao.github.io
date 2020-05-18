@@ -1,6 +1,6 @@
-## **Enjoy K8s&OCP**
-[Docker: cli](./catalog/k8s&ocp/docker/cli.md)
+### **Enjoy K8s&OCP**
+[Docker: cli](./docker/cli.md)
 
-[K8s: cli](./catalog/k8s&ocp/k8s/cli.md)
+[K8s: cli](./k8s/cli.md)
 
-[OCP: cli](./catalog/k8s&ocp/ocp/cli.md)
+[OCP: cli](./ocp/cli.md)

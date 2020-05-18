@@ -1,2 +1,2 @@
-## **Enjoy Linux**
-[command](./catalog/linux/command/command1.md)
+### **Enjoy Linux**
+[command](./command/command1.md)
