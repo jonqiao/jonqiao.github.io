@@ -1,7 +1,7 @@
 # **Start from Now!!!**
 
 ### **Catalog - k8s & OCP**
-#### Chapter1: Basic Commands
+#### Chapter1: kubectl Commands
 1. kubectl --help
 2. kubect create  # 创建一个资源从一个文件或标准输入
 	 ```
@@ -51,11 +51,3 @@
    kubectl get deploy nginx-dp -o yaml --export > deploy.yaml                    # get命令导出yaml文件
    kubectl explain pods.spec.containers                                          # desc the fields
    ```
-
-
-
-
-
-
-
-
