@@ -1,6 +1,8 @@
 ### **Enjoy K8s&OCP**
-[Docker: cli](./docker/cli.md)
+[Docker-cli](./docker/cli.md)
 
-[K8s: cli](./k8s/cli.md)
+[Docker-test](./docker/test.md)
 
-[OCP: cli](./ocp/cli.md)
+[K8s-cli](./k8s/cli.md)
+
+[OCP-cli](./ocp/cli.md)

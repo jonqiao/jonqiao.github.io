@@ -1,12 +1,10 @@
 ## **Get what you need**
 
-[K8s&OCP](./k8s&ocp/index.md)
+[K8s & OCP](./k8s&ocp/index.md)
 
-[CLinux](./linux/index.md)
+[Linux](./linux/index.md)
 
-[CSpringboot]()
-
-[Cloud]()
+[Springboot & Springcloud]()
 
 [AI]()
 
