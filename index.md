@@ -1,7 +1,7 @@
-#**Start from Now!!**
+# **Start from Now!!**
 
-###**k8s&OPC**
-####Basic
+### **k8s&OPC**
+#### Basic
 1. kubectl --help
 2. kubect create  # 创建一个资源从一个文件或标准输入
 	- kubectl create deployment nginx --image=nginx:1.14 
