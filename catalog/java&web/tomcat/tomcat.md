@@ -73,6 +73,7 @@
 		○ sample.war, path = "/test" 会生成目录 appBase/test, 访问时需带上 /test .
 		○ sample.war, path = "/sample/test" 会生成目录 appBase/sample#test, 访问是需带上 /sample/test .
 		○ sample.war, path = "" 会生成目录 appBase/ROOT, 访问根目录即可 / .
+
 注意: 如果没有按照官方建议配置, 很有可能同时产生两次部署现象(double deployment is likely to result)
 
 
