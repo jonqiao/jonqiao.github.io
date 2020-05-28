@@ -64,15 +64,15 @@
 
 ##### 配置 server.xml, 两种情况.
 	1. war包在appBase目录下
-	- 官方建议 不要设置 docBase 和 path, 此时, tomcat会自动解压war到war包得名字得目录,
-		○ sample.war 会生成目录 appBase/sample. 访问得时需带上 /sample.
-		○ sample#test.war 会生成目录 appBase/sample#test, 访问是需带上 /sample/test .
-		○ ROOT.war, 会生成ROOT目录, 可以直接访问根路径 "/" . 这也是为什么此种部署方式需要修改war名字为ROOT.war .
+	- 官方建议 不要设置 docBase 和 path, 此时, tomcat会自动解压war到war包得名字得目录.
+		○ sample.war 会生成目录 appBase/sample. 访问得时需带上 /sample
+		○ sample#test.war 会生成目录 appBase/sample#test, 访问是需带上 /sample/test
+		○ ROOT.war, 会生成ROOT目录, 可以直接访问根路径 "/" ; 这也是为什么此种部署方式,常常修改war名字为 ROOT.war
 	2. war包不在appBase目录下
-	- 官方建议 设置 docBase 和 path, 此时, tomcat会自动解压war包到 以path内容创建的目录,
-		○ sample.war, path = "/test" 会生成目录 appBase/test, 访问时需带上 /test .
-		○ sample.war, path = "/sample/test" 会生成目录 appBase/sample#test, 访问是需带上 /sample/test .
-		○ sample.war, path = "" 会生成目录 appBase/ROOT, 访问根目录即可 / .
+	- 官方建议 设置 docBase 和 path, 此时, tomcat会自动解压war包到 以 path 内容创建的目录.
+		○ sample.war, path = "/test" 会生成目录 appBase/test, 访问时需带上 /test
+		○ sample.war, path = "/sample/test" 会生成目录 appBase/sample#test, 访问是需带上 /sample/test
+		○ sample.war, path = "" 会生成目录 appBase/ROOT, 访问根目录即可 "/"
 
 注意: 如果没有按照官方建议配置, 很有可能同时产生两次部署现象(double deployment is likely to result)
 
