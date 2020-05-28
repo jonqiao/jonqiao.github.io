@@ -1,4 +1,4 @@
-#### **Tomcat config**
+# **Tomcat config**
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <Server>
@@ -59,10 +59,10 @@
 </Server>
 ```
 
-#### 总结:
+## 总结:
 - tomcat访问跟路径 "/" 是访问得appBase中的 ROOT 目录. 不管是手动创建还是tomcat自动生成都一样的效果.
 
-##### 配置 server.xml, 两种情况.
+### 配置 server.xml, 两种情况.
 	1. war包在appBase目录下
 	- 官方建议 不要设置 docBase 和 path, 此时, tomcat会自动解压war到war包得名字得目录.
 		○ sample.war 会生成目录 appBase/sample. 访问得时需带上 /sample
